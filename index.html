@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <nav>
+        <img class="logo" src="./assets/images/logo.svg" alt="" />
+        <ul class="desktop-navigation-menu">
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+        <img class="menu-icon" onclick="handleMenu()" src="./assets/images/icon-menu.svg" alt="menu to display mobile menu" />
+      </nav>
+      <main>
+        <picture>
+          <source
+            class="colorful-news-img"
+            media="(min-width: 1440px)"
+            srcset="./assets/images/image-web-3-desktop.jpg"
+          />
+          <source
+            class="colorful-news-img"
+            media="(min-width: 320px)"
+            srcset="./assets/images/image-web-3-mobile.jpg"
+          />
+          <img
+            class="colorful-news-img"
+            alt="web 3 image"
+            srcset="./assets/images/image-web-3-mobile.jpg"
+          />
+        </picture>
+        <h1 class="title">The Bright Future of Web 3.0?</h1>
+        <div class="first-paragraph">
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button class="read-more-button">READ MORE</button>
+        </div>
+        <div class="new-news-container">
+          <h1 class="new-news-title">New</h1>
+          <div class="container-little-news">
+            <div class="little-news-container">
+              <h2 class="little-news-title">Hydrogen VS Electric Cars</h2>
+              <p class="little-news-paragraph">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <hr>
+            <div class="little-news-container">
+              <h2 class="little-news-title">The Downsides of AI Artistry</h2>
+              <p class="little-news-paragraph">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <hr>
+            <div class="little-news-container">
+              <h2 class="little-news-title">Is VC Funding Drying Up?</h2>
+              <p class="little-news-paragraph">
+                Private funding by VC firms is down 50% YOY. We take a look at what
+                that means.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-new-container bottom-new-1">
+          <img
+            class="news-img"
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="Retro PCs"
+          />
+          <div class="inside-bottom-new-container">
+            <h1>01</h1>
+            <h2>Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="bottom-new-container bottom-new-2">
+          <img
+            class="news-img"
+            src="./assets/images/image-top-laptops.jpg"
+            alt="RGB laptop"
+          />
+          <div class="inside-bottom-new-container">
+            <h1>02</h1>
+            <h2>Top 10 Laptops of 2022</h2>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="bottom-new-container bottom-new-3">
+          <img
+            class="news-img"
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="gaming ps4 controller"
+          />
+          <div class="inside-bottom-new-container">
+            <h1>03</h1>
+            <h2>The Growth of Gaming</h2>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </main>
+<!--  <div class="attribution"></div> -->
+<div  style="display: none;" class="menu-background">
+  <div onclick="handleMenu()" class="mobile-menu-background"></div>
+  <nav class="menu">
+    <img class="close-icon" onclick="handleMenu()" src="./assets/images/icon-menu-close.svg" alt="">
+    <ul class="mobile-navigation-menu">
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </ul>
+  </nav>
+</div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
